@@ -7,6 +7,6 @@ from .namespaces import anagram_ns
 class AnagramAnswer(Resource):
     @anagram_ns.response(200, 'Cars successfully retrieved.')
     @anagram_ns.doc('get_cars')
-    def get(self):
+    def post(self):
         """List all cars"""
         return "Miam"
